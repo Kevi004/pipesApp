@@ -21,4 +21,42 @@
     </p-card>
   </div>
 
+  <div class="col-12 md:col-6">
+    <p-card header="lowercase">
+      <ol>
+        <li> fecha </li>
+        <li> fecha | 'date' </li>
+        <li> fecha | 'short' </li>
+        <li> fecha | 'long' </li>
+        <li> fecha | 'MMMM' </li>
+        <li> fecha | 'MMMM dd, yyyy' </li>
+      </ol>
+      <hr>
+      <ol>
+        <li>fecha | date:'long':'GMT-6'</li>
+        <li>fecha | date:'long':'GMT-4'</li>
+        <li>fecha | date:'long':'':'es-MX'</li>
+      </ol>
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="titlecase">
+      <ol>
+        <li> {{customDate}} </li>
+        <li> {{customDate | date}}  </li>
+        <li> {{customDate | date:'short'}} </li>
+        <li> {{customDate | date:'long'}}  </li>
+        <li> {{customDate | date:'MMMM'}}  </li>
+        <li> {{customDate | date:'MMMM dd, yyyy'}}  </li>
+      </ol>
+      <hr>
+      <ol>
+        <li>{{customDate | date:'long':'GMT-6'}}</li>
+        <li>{{customDate | date:'long':'GMT-4'}}</li>
+        <li>{{customDate | date:'long':'':'es-Mx'}}</li>
+      </ol>
+
+    </p-card>
+  </div>
+
 </div>
